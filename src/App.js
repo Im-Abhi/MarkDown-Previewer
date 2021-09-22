@@ -53,23 +53,26 @@ function APP() {
     return (
       <div className="App">
         <div className="container">
-         
           <div className="row">
-            <h1 className="title text-center">
-              MarkDown-Previewer
+            <h1 className="text-center p-4 display-2">
+              MarkDown-Previewer &nbsp;
+              <span><img className="md_img align-items-center" src="https://cms-assets.tutsplus.com/uploads/users/31/posts/20764/preview_image/markdown.jpg" 
+                    alt="markdown_image" /></span>
+              <hr></hr>
             </h1>
+            
           </div>
           
           <div className="row">
             
             <div className="col-md-6">
-              <h1 className="text-center">
-                MarkDown-text
+              <h1 className="text-center p-1">
+                Editor
               </h1>
               
            <div className="mark-input">
              <textarea id="editor"
-               className="input" 
+               className="input p-2" 
                style={{height:"60vh",
                  width:"100%"}}
                value={markdownText}
@@ -80,11 +83,11 @@ function APP() {
             </div>
   
             <div className="col-md-6">
-              <h1 className="text-center">
-                MarkDown-Preview
+              <h1 className="text-center p-1">
+                Preview
               </h1>
-            <div className="mark-input border">
-             <div id="preview"
+            <div className="mark-input  border border-dark">
+             <div id="preview" className="p-2"
                style={{minHeight:"60vh",
                         height:"60vh",
                       width:"100%"}}
@@ -95,7 +98,6 @@ function APP() {
             </div>
             
           </div>
-          
         </div>
         
       </div>
